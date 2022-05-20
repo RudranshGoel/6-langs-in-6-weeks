@@ -22,7 +22,7 @@ void *count(void *var)
 
 int main()
 {
-    pthread_t thread_id;
+    pthread_t thread_id; //creating a thread
     pthread_create(&thread_id, NULL, count, NULL);
     pthread_join(thread_id, NULL);
     exit(0);
